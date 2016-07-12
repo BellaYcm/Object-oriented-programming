@@ -1,6 +1,7 @@
 <?php
 
     /**
+    *当用if去判断type时 试着改成接口形式
      * Created by PhpStorm.
      * User: sunke
      * Date: 2016/7/12
