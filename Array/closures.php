@@ -1,5 +1,6 @@
 <?php
     /**
+     * 匿名函数 闭包
      * Created by PhpStorm.
      * User: sunke
      * Date: 2016/7/14
