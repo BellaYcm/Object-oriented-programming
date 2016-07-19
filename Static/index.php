@@ -11,7 +11,7 @@
 
         public static $age = 1;#看到静态方法 要想到share
 
-        const AGE=2;
+        const AGE = 2;
 
         public function addBirthday()
         {
@@ -19,13 +19,13 @@
         }
     }
 
-    var_dump(Person::AGE);
+    var_dump(Person::AGE);#2
     $s = new Person();
     $s->addBirthday();
-    var_dump(Person::$age);
+    var_dump(Person::$age);#2
     $k = new Person();
     $k->addBirthday();
-    var_dump(Person::$age);
+    var_dump(Person::$age);#3
 
     class PersonA
     {
@@ -40,7 +40,7 @@
 
     $s = new PersonA();
     $s->addBirthday();
-    var_dump($s->age);
+    var_dump($s->age);#2
     $k = new PersonA();
     $k->addBirthday();
-    var_dump($s->age);
+    var_dump($s->age);#2
